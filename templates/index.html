@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNA Data Storage</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Store your memories inside a living fish</h1>
+
+        <div class="io-container">
+            <div class="input-area">
+                <textarea id="input-text" placeholder="Enter ASCII text or DNA sequence..."></textarea>
+                <div class="char-counter">
+                    <span id="char-count">0</span> characters
+                </div>
+            </div>
+
+            <div class="output-area">
+                <textarea id="output-text" readonly placeholder="Result will be displayed here..."></textarea>
+                <div class="base-pair-counter">
+                    <span id="base-pair-count">0</span> base pairs
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="encode-btn">Encode to DNA</button>
+            <button id="decode-btn">Decode from DNA</button>
+            <div class="padding-container">
+                <label for="padding-input">Padding:</label>
+                <input type="number" id="padding-input" value="0" min="0">
+            </div>
+        </div>
+
+        <div class="image-converter">
+            <h2>Image to ASCII Converter</h2>
+            <input type="file" id="image-upload" accept="image/*">
+            <button id="convert-btn">Convert</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

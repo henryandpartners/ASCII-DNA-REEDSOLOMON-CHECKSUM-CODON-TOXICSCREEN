@@ -1,0 +1,94 @@
+body {
+    background-image: url('../img/zebrafish_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    backdrop-filter: blur(5px);
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 80%;
+    max-width: 900px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.io-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-area, .output-area {
+    width: 48%;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    resize: vertical;
+}
+
+.char-counter, .base-pair-counter {
+    text-align: right;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 0 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.padding-container {
+    display: flex;
+    align-items: center;
+}
+
+#padding-input {
+    width: 60px;
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.image-converter {
+    margin-top: 20px;
+}
